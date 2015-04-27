@@ -71,7 +71,7 @@
 	};
 
 	// NodeBB version <=0.6.0
-	plugin.addNavigation = function(header, callback) {
+	AudioControl.addNavigation = function(header, callback) {
 		// if (!AudioControl.settings.get('disableNav')) {
 			header.navigation.push({
 				"id": 'navplayer',
