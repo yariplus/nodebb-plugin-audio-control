@@ -22,8 +22,8 @@
 			// NodeBB version <=0.5.0
 			NodeBB.app = data;
 			NodeBB.router = data;
-			NodeBB.middleware = next;
-			next = arguments[3];
+			NodeBB.middleware = callback;
+			callback = arguments[3];
 		}else{
 			return console.log("AudioControl: " + "Failed to load plugin. Invalid arguments found for app.load(). Are you sure you're using a compatible version of NodeBB?");
 		}
@@ -68,6 +68,21 @@
 		});
 
 		callback(null, custom_header);
+	};
+
+	// NodeBB version <=0.6.0
+	plugin.addNavigation = function(header, callback) {
+		// if (!AudioControl.settings.get('disableNav')) {
+			header.navigation.push({
+				"id": 'navplayer',
+				"class": '',
+				"route": "#",
+				"text": '',
+				"title": ''
+			});
+
+			callback(null, header);
+		// }
 	};
 
 	module.exports = AudioControl;
