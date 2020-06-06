@@ -16,7 +16,7 @@
     "hooks": [
         { "hook": "static:app.load", "method": "load" },
         { "hook": "filter:admin.header.build", "method": "adminHeader" },
-        { "hook": "filter:header.build", "method": "addNavigation" }
+        { "hook": "filter:navigation.available", "method": "addNavigation" }
     ],
     "templates": "./public/templates"
 }

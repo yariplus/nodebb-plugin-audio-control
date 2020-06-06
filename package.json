@@ -1,11 +1,9 @@
 {
   "name": "nodebb-plugin-audio-control",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Add a play/pause style player to the navbar for adding audio streams or music.",
   "main": "library.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/yariplus/nodebb-plugin-audio-control"
@@ -29,7 +27,8 @@
   "readmeFilename": "README.md",
   "dependencies": {},
   "nbbpm": {
-    "compatibility": "^0.7.0"
+    "compatibility": "^1.13.0"
   },
-  "homepage": "https://github.com/yariplus/nodebb-plugin-audio-control"
+  "homepage": "https://github.com/yariplus/nodebb-plugin-audio-control",
+  "devDependencies": {}
 }
