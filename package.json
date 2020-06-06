@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-audio-control",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Add a play/pause style player to the navbar for adding audio streams or music.",
   "main": "library.js",
   "type": "module",
